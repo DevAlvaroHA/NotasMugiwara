@@ -50,9 +50,6 @@ docker build -t mi-react-app .
 Una vez que la imagen esté construida, puedes ejecutar el contenedor con:
 docker run -p 8080:5173 mi-react-app
 
-Esto mapea el puerto 5173 dentro del contenedor al puerto 8080 en tu máquina local. Luego, podrás acceder a la aplicación en:
-http://localhost:8080
-
 ## Usando Docker Compose
 Para facilitar la ejecución del contenedor y la integración con otros servicios, también puedes usar Docker Compose.
 

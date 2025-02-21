@@ -1,0 +1,60 @@
+/* Estilos para la tarjeta de la nota */
+.note {
+  display: flex; /* Usa un diseño de caja flexible */
+  flex-direction: column; /* Apila los elementos en columna */
+  width: 250px; /* Ancho fijo de la tarjeta */
+  height: 250px; /* Altura fija de la tarjeta */
+  padding: 20px 15px; /* Espaciado interno: 20px arriba/abajo, 15px lados */
+  border-radius: 20px; /* Bordes redondeados para una apariencia suave */
+  color: whitesmoke; /* Color del texto en blanco humo */
+  background: #ffffff; /* Fondo blanco asegurado */
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4); /* Sombra fuerte para efecto elevado */
+}
+
+/* Estilos para el área de texto dentro de la nota */
+.note__text {
+  flex: 1; /* Ocupa todo el espacio disponible en la nota */
+  border: none; /* Elimina el borde del área de texto */
+  background-color: inherit; /* Hereda el color de fondo de la tarjeta */
+  resize: none; /* Evita que el usuario pueda redimensionar el área de texto */
+  scrollbar-width: thin; /* Hace que la barra de desplazamiento sea más delgada */
+  scroll-behavior: smooth; /* Suaviza el desplazamiento dentro del área de texto */
+  outline: none; /* Evita el contorno predeterminado al enfocar el área de texto */
+  font-size: 1rem; /* Tamaño del texto */
+  line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+  color: inherit; /* Hereda el color de texto de la tarjeta */
+}
+
+/* Estilos para el pie de la nota */
+.note__footer {
+  display: flex; /* Usa flexbox para organizar los elementos */
+  justify-content: space-between; /* Distribuye los elementos a los extremos */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  margin-top: 10px; /* Agrega margen superior para separarlo del contenido */
+}
+
+/* Estilos para la hora de la nota */
+.note__time {
+  font-size: 0.8rem; /* Reduce el tamaño del texto de la hora */
+}
+
+/* Estilos para los iconos dentro de la nota */
+.note__icon {
+  width: 18px; /* Tamaño del icono */
+  opacity: 0.2; /* Inicialmente, el icono es casi invisible */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+  padding: 1px; /* Pequeño espaciado interno */
+  margin-left: 6px; /* Margen a la izquierda para separar los iconos */
+  transition: 300ms ease-in-out; /* Transición suave en los cambios de estado */
+}
+
+/* Efecto hover: cambia la opacidad y la escala del icono */
+.note__icon:hover {
+  transform: scaleY(1.2); /* Estira el icono en el eje Y al pasar el mouse */
+  opacity: 1; /* Hace el icono completamente visible */
+}
+
+/* Efecto active: rota el icono al hacer clic */
+.note__icon:active {
+  transform: rotate(30deg); /* Gira el icono 30 grados cuando se hace clic */
+}

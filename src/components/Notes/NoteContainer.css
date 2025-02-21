@@ -1,0 +1,24 @@
+/* Contenedor principal de las notas */
+.note-container {
+    height: 100%; /* Ocupa toda la altura disponible */
+    color: whitesmoke; /* Color de texto en blanco humo (#F5F5F5) */
+}
+
+/* Estilos para el título dentro del contenedor de notas */
+.note-container h1 {
+    margin-bottom: 20px; /* Agrega un espacio debajo del título */
+    color: whitesmoke; /* Mantiene el color blanco humo */
+}
+
+/* Contenedor de las notas individuales */
+.note-container__notes {
+    color: whitesmoke; /* Color de texto */
+    height: 90%; /* Ocupa el 90% de la altura del contenedor padre */
+    display: flex; /* Utiliza flexbox para organizar las notas */
+    flex-wrap: wrap; /* Permite que las notas se ajusten en varias líneas */
+    gap: 20px; /* Espaciado entre las notas */
+    min-width: 80vw; /* Ancho mínimo del contenedor, cubre al menos el 80% del viewport */
+    overflow-y: scroll; /* Permite desplazamiento vertical si hay muchas notas */
+    scrollbar-width: thin; /* Hace que la barra de desplazamiento sea más delgada */
+    scroll-behavior: smooth; /* Suaviza la experiencia de desplazamiento */
+}

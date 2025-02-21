@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Especifica el conjunto de caracteres utilizado (UTF-8 es estándar para soportar la mayoría de caracteres) -->
+    <meta charset="UTF-8" />
+
+    <!-- Define el icono de la página (favicon) que se mostrará en la pestaña del navegador -->
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
+
+    <!-- Configuración de la vista en dispositivos móviles: 
+         - `width=device-width` ajusta el ancho del viewport al del dispositivo.
+         - `initial-scale=1.0` establece el nivel de zoom inicial para evitar que se vea demasiado grande o pequeño. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>NotasMugiwara</title>
+  </head>
+  <body>
+    <!-- Contenedor principal donde React montará la aplicación -->
+    <div id="root"></div>
+
+    <!-- Importación del script principal de la aplicación de React 
+         - `type="module"` permite importar/exportar módulos de JavaScript. -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

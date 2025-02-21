@@ -1,0 +1,42 @@
+/* Contenedor principal de la barra lateral */
+.sidebar {
+    width: 100px; /* Establece el ancho fijo de la barra lateral */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: flex-start; /* Alinea los elementos al inicio (arriba) */
+    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 20px; /* Espaciado uniforme entre elementos */
+    border-style: 20%; /* ❌ Esta línea no tiene efecto, el valor correcto sería "solid", "dashed", etc. */
+}
+
+/* Imagen del botón para agregar una nueva nota */
+.sidebar__add-img {
+    /* margin-top: 50px; */ /* Comentado, posiblemente no se usa */
+    width: 55px; /* Establece el tamaño del ícono */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre él */
+    transition: all 0.5s ease-out; /* Efecto de transición suave */
+}
+
+/* Contenedor de la lista de colores */
+.sidebar__colorlist {
+    display: flex; /* Usa flexbox para organizar los colores */
+    flex-direction: column; /* Organiza los colores en una columna */
+    gap: 20px; /* Espaciado entre cada color */
+    align-items: center; /* Centra los colores horizontalmente */
+    height: 0; /* Inicialmente colapsado, sin altura visible */
+    transition: 500ms ease-in-out; /* Transición suave al abrir/cerrar */
+}
+
+/* Clase activa que expande la lista de colores */
+.sidebar__colorlist_active {
+    height: 300px; /* Define la altura cuando la lista está activa */
+}
+
+/* Estilo para cada color en la lista */
+.sidebar__colorlist_color {
+    width: 20px; /* Tamaño del círculo de color */
+    height: 20px; /* Tamaño del círculo de color */
+    border-radius: 50%; /* Hace que el color sea completamente redondo */
+    list-style-type: none; /* Elimina los estilos de lista (viñetas) */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre él */
+}

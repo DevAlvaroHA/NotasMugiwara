@@ -1,5 +1,7 @@
 // Importamos los hooks de React y los estilos de la nota
 import { useState } from 'react';
+import React from 'react';
+
 import './Note.css';
 
 // Importamos las imágenes de los iconos de bloqueo y eliminación

@@ -1,5 +1,6 @@
 // Importamos los hooks useState y useEffect de React
 import { useState, useEffect } from 'react';
+import React from 'react';
 
 // Importamos los componentes principales de la aplicación
 import NoteContainer from './components/Notes/NoteContainer';

@@ -1,5 +1,6 @@
 // Importamos React y el hook useState para manejar el estado
 import { useState } from 'react';
+import React from 'react';
 
 // Importamos los estilos de la barra lateral
 import './SideBar.css';

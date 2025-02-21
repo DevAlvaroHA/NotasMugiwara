@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "8080:5173"  # Mapeo de puertos: 5173 en el contenedor a 8080 en el host
+    volumes:
+      - .:/app        # Volumen para facilitar la edición del código
+      - /app/node_modules  # Evita que se sobrescriban las dependencias dentro del contenedor
+    environment:
+      - NODE_ENV=production
+    command: npm run dev  # Comando para iniciar la aplicación en el contenedor
+
+  # Puedes agregar más servicios aquí, como bases de datos, si es necesario
+

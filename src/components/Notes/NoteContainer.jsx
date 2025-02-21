@@ -1,3 +1,5 @@
+import React from 'react';
+
 // Importamos el componente Note y los estilos CSS
 import Note from './Note';
 import './NoteContainer.css';

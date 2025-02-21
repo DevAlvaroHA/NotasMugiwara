@@ -6,7 +6,7 @@
     align-items: center; /* Centra los elementos horizontalmente */
     flex-direction: column; /* Organiza los elementos en columna */
     gap: 20px; /* Espaciado uniforme entre elementos */
-    border-style: 20%; /* ❌ Esta línea no tiene efecto, el valor correcto sería "solid", "dashed", etc. */
+    border-style: 20%;
 }
 
 /* Imagen del botón para agregar una nueva nota */

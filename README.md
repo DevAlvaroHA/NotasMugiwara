@@ -29,8 +29,8 @@ NotasMugiwara es una aplicación web de gestión de notas construida con React y
 
 Sigue estos pasos para clonar e instalar el proyecto:
 
-1. Clona el repositorio:
-   git clone <URL del repositorio>
+Clona el repositorio:
+git clone https://github.com/DevAlvaroHA/ProyectoCliente
    
 Navega a la carpeta del proyecto:
 cd NotasMugiwara
